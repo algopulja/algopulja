@@ -24,7 +24,7 @@ public class Brown46_2503 {
 						|| (i / 100 != a && i / 100 != c      &&      (i % 100) / 10 != a && (i % 100) / 10 != c      &&         i % 10 == b)
 						|| (i / 100 == c          &&        (i % 100) / 10 != a && (i % 100) / 10 != b            &&           i % 10 != a && i % 10 != b)
 						|| (i / 100 != a && i / 100 != b      &&      (i % 100) / 10 == c       &&        i % 10 != a && i % 10 != b)) {
-//				System.out.println(i);
+
 				tmp.add(i);
 				}
 			}
@@ -41,7 +41,7 @@ public class Brown46_2503 {
 						|| (i / 100 != a        &&          (i % 100) / 10 == c         &&       i % 10 == b)
 						|| (i / 100 == c        &&          (i % 100) / 10 != a         &&       i % 10 == b)
 						|| (i / 100 == b        &&          (i % 100) / 10 == c         &&       i % 10 != a)) {
-//				System.out.println(i);
+
 					tmp.add(i);
 				}
 			}
@@ -51,7 +51,7 @@ public class Brown46_2503 {
 			for (int i : al) {
 				if (       (i / 100 == c        &&          (i % 100) / 10 == a         &&       i % 10 == b)
 						|| (i / 100 == b        &&          (i % 100) / 10 == c         &&       i % 10 == a)) {
-//				System.out.println(i);
+
 					tmp.add(i);
 				}
 			}
@@ -70,7 +70,7 @@ public class Brown46_2503 {
 			ArrayList<Integer> tmp = new ArrayList<Integer>();
 
 			for (int i : al) {
-//				System.out.println(i);
+
 				if (  ( i/100==a       &&        (i % 100)/10!=c       &&        i%10 ==b)
 					|| ( i/100!=c      &&        (i % 100)/10==b       &&        i%10 ==a)
 					||( i/100==a       &&        (i % 100)/10==c       &&        i%10!=b   )
@@ -79,7 +79,7 @@ public class Brown46_2503 {
 					||( i/100==b       &&        (i % 100)/10!= a      &&        i%10==c     )) {
 			
 					tmp.add(i);
-//					System.out.println("들어감");
+
 				}
 			}
 			return tmp;
@@ -89,7 +89,7 @@ public class Brown46_2503 {
 				if (  ( i/100==a       &&        (i % 100)/10==c       &&    i%10 ==b )
 					||( i/100==c       &&        (i % 100)/10==b       &&    i%10 ==a ) 
 					||( i/100==b       &&        (i % 100)/10==a      &&    i%10 ==c )) {
-//				System.out.println(i);
+
 					tmp.add(i);
 				}
 			}
@@ -100,7 +100,7 @@ public class Brown46_2503 {
 				if (  ( i/100==a       &&        (i % 100)/10==b       &&    i%10 !=c )
 					||( i/100==a       &&        (i % 100)/10!=b       &&    i%10 ==c ) 
 					||( i/100!=a       &&        (i % 100)/10==b      &&    i%10 ==c )) {
-//				System.out.println(i);
+
 					tmp.add(i);
 				}
 			}
@@ -119,13 +119,7 @@ public class Brown46_2503 {
 	        return tmp;
 	}
 	
-//	public static void count(ArrayList<Integer>...str) {
-//		
-//       for(int i=0; i<str.length;i++) {
-//    	   
-//       }
-//         
-//}
+
 	public static void main(String[] args) {
 
 		ArrayList<Integer> b = new ArrayList<Integer>();
@@ -136,42 +130,11 @@ public class Brown46_2503 {
 				b.add(i);
 		}
 
-//		System.out.println(baseball(123, 1, 1));
-//		System.out.println(baseball(356, 1, 0));
+
 		System.out.println(check(baseball(123,1, 1),check(check(baseball(327, 2, 0),baseball(356, 1, 0)),baseball(489, 0, 1))).size());
 		
-//		for(int i : b) {
-//			if(( i/100==1 &&  (i % 100)/10!=3 && i%10 ==2) ||                  
-//			( i/100==1   && (i % 100)/10==3 &&   i%10!=2   )|| 
-//			(   i/100==2 &&     (i % 100)/10 != 1 &&  i%10==3     ))	 {
-//				System.out.println(i);
-//			}
-//		}
 
 	}
 
 }
-/*
- * 123~987
- *
- */
-/*
- * 123 1 1
- * 
- * i/100 , (i % 100)/10, i%10 i/100 && (i % 100)/10 && i%10
- * 
- */
-/*
- * abc 0 1 0a0 00a not b and c / b00 00b not a and c / c00 0c0! not a and b 
- * 		0 2 ba0 b0a 0ab not c/ c0a ca0 0ca not b/ 0cb c0b bc0 not a 
- * 		0 3 cab bca 
- * 		1 0 a00 not b and c / 0b0 not a and c/ 00c not a and b 
- *		1 1 a0b not c / 0ba not c/  ac0 not b/ 0ac not b/ cb0! not a/ b0c not a 
- *a0b not c / ac0 not b/ b0c not a / 
- *		1 2 acb / cba / bac
- * 		2 0 ab0 not c/ a0c not b/ 0bc! not a
- * 
- * 
- * 
- * 
- */
+
